@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C project",
+      "type": "shell",
+      "command": "gcc",
+      "args": ["*.c", "-Wall", "-Wextra", "-std=c11", "-o", "main.exe"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
